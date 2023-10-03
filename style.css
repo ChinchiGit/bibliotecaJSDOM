@@ -1,0 +1,35 @@
+.contenedor{
+    display: flex;
+}
+
+.libro{
+    text-align: center;
+    width: 240px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: beige;
+    border-radius: 10px;
+    font-family: verdana;
+}
+
+.titulo {
+    background: black;
+    color: white;
+    padding: 4%;
+    border-radius: 5px;
+}
+
+.enlace{
+    font-size: small;
+}
+
+.imagen{
+    max-width: 228px;
+}
+
+.pais, .lengua, .paginas{
+    border-bottom: grey;
+    border-style: outset;
+    padding: 5px;
+}
