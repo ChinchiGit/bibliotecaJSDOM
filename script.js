@@ -52,8 +52,13 @@ const books = [
 
 
 let main = document.createElement("main")
+
+//Modelo 1
+
+/*
 let contenedor = document.createElement("section");
 contenedor.classList.add("contenedor");
+
 
 let cuadroLibro =[];
 let titulo = [];
@@ -64,7 +69,6 @@ let enlace = [];
 let pais = [];
 let lengua = [];
 let paginas = [];
-
 
 for (let i = 0; i<books.length; i++){
   cuadroLibro[i] = document.createElement("article");
@@ -115,6 +119,67 @@ for (let i = 0; i<books.length; i++){
 
 
 }
+*/
 
-main.appendChild(contenedor)
+//MODELO 2
+const lista = `<section class = "contenedor">
+                  <article class = "libro">
+                    <h3 class = "titulo">${books[0].title}</h3>
+                    <h5 class = "autor">Author: ${books[0].author}</h5>
+                    <p class = "fecha">Year: ${books[0].year}</p>
+                    <img src =${books[0].imageLink} class = "imagen">
+                    <a href =${books[0].link} class="enlace">Ver en Wikipedia</a>
+                    <p class = "pais">Country: ${books[0].country}</p>
+                    <p class = "lengua">Language: ${books[0].language}</p>
+                    <p class = "paginas">Pages: ${books[0].pages}</p>
+                  </article>
+                  <article class = "libro">
+                    <h3 class = "titulo">${books[1].title}</h3>
+                    <h5 class = "autor">Author: ${books[1].author}</h5>
+                    <p class = "fecha">Year: ${books[1].year}</p>
+                    <img src =${books[1].imageLink} class = "imagen">
+                    <a href =${books[1].link} class="enlace">Ver en Wikipedia</a>
+                    <p class = "pais">Country: ${books[1].country}</p>
+                    <p class = "lengua">Language: ${books[1].language}</p>
+                    <p class = "paginas">Pages: ${books[1].pages}</p>
+                  </article>
+                  <article class = "libro">
+                    <h3 class = "titulo">${books[2].title}</h3>
+                    <h5 class = "autor">Author: ${books[2].author}</h5>
+                    <p class = "fecha">Year: ${books[2].year}</p>
+                    <img src =${books[2].imageLink} class = "imagen">
+                    <a href =${books[2].link} class="enlace">Ver en Wikipedia</a>
+                    <p class = "pais">Country: ${books[2].country}</p>
+                    <p class = "lengua">Language: ${books[2].language}</p>
+                    <p class = "paginas">Pages: ${books[2].pages}</p>
+                  </article>
+                  <article class = "libro">
+                    <h3 class = "titulo">${books[3].title}</h3>
+                    <h5 class = "autor">Author: ${books[3].author}</h5>
+                    <p class = "fecha">Year: ${books[3].year}</p>
+                    <img src =${books[3].imageLink} class = "imagen">
+                    <a href =${books[3].link} class="enlace">Ver en Wikipedia</a>
+                    <p class = "pais">Country: ${books[3].country}</p>
+                    <p class = "lengua">Language: ${books[3].language}</p>
+                    <p class = "paginas">Pages: ${books[3].pages}</p>
+                  </article>
+                  <article class = "libro">
+                    <h3 class = "titulo">${books[4].title}</h3>
+                    <h5 class = "autor">Author: ${books[4].author}</h5>
+                    <p class = "fecha">Year: ${books[4].year}</p>
+                    <img src =${books[4].imageLink} class = "imagen">
+                    <a href =${books[4].link} class="enlace">Ver en Wikipedia</a>
+                    <p class = "pais">Country: ${books[4].country}</p>
+                    <p class = "lengua">Language: ${books[4].language}</p>
+                    <p class = "paginas">Pages: ${books[4].pages}</p>
+                  </article>
+                </section>`;
+
+
+//Modelo 1
+//main.appendChild(contenedor) 
+
+
+//MOdelo 2
+main.innerHTML = lista;
 document.body.appendChild(main);

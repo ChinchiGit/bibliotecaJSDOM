@@ -1,16 +1,23 @@
 .contenedor{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .libro{
     text-align: center;
     width: 240px;
     margin: auto;
+    margin-top: 0px;
     margin-bottom: 20px;
     padding: 20px;
     background: beige;
     border-radius: 10px;
     font-family: verdana;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    
 }
 
 .titulo {
@@ -18,18 +25,29 @@
     color: white;
     padding: 4%;
     border-radius: 5px;
+    margin-top: 0px;
 }
 
 .enlace{
     font-size: small;
+    margin:auto;
 }
 
 .imagen{
     max-width: 228px;
+    max-height: 298px;
+
+}
+
+.autor, .fecha{
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .pais, .lengua, .paginas{
     border-bottom: grey;
     border-style: outset;
     padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
